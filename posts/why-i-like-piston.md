@@ -93,6 +93,12 @@ I think that a good game engine should make certain common patterns easy to expr
 
 Because the event loop is managed by the user, you have complete control over the execution. This level of micro-management is not for everyone, but I like it. If you want to make your logic simple, you can simply throw game update logic into the event loop, and it will happen in sequence with rendering. Alternatively, you can separate your update loop into another thread so that any physics systems in your game are not tied to the framerate. Which one of these you pick depends on how your game works and how it responds to putting state behind locks on in channels.
 
+### Feature Completeness
+
+While there are some problems that Piston does not set out to solve, the ones it does tackle are solved with a good amount of completeness.
+
+For example, all game engine crates of course have an API for accessing input events. Most of them let you check for key presses, text entry, mouse button clicks, scrolling, and cursor movement. Piston's `Input` enum, however, also tracks things like window resizing, gamepad input, and touch screen events. One type of input it allows you to check that most other engines do not is file dragging, i.e. when you drag a file over the window.
+
 ### Vector Graphics
 
 This is a small thing for most people, but being able to very easily draw arbitrary 2D primitives is very important to me. I am not a very good artist, so rather than making textures and sprites, I like to draw polygons and animate them with math.
