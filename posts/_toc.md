@@ -1,5 +1,5 @@
 [Home](/)
-[Sample Blog Post](/sample-blog-post)
+[Why I like Piston, a Rust game engine](/why-i-like-piston)
 
 <br><br>
 
