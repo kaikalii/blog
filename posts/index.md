@@ -5,6 +5,8 @@
 
 My name is Kai and I like to write software. I write mostly in Rust.
 
+[My GitHub](https://github.com/kaikalii)
+
 ---
 
 # Latest Posts
